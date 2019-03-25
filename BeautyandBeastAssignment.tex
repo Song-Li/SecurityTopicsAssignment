@@ -1,0 +1,34 @@
+\documentclass[9pt]{article}
+\title{Assignment of Beauty and Beast browser fingerprinting paper}
+\author{Song Li(lsong18)}
+\usepackage[margin=0.6In]{geometry}
+\setlength{\columnsep}{0.3In}
+\renewcommand{\baselinestretch}{1.1} 
+	\twocolumn
+\begin{document}
+	\maketitle
+Please put your implemented browser\_fingerprint.js and your answer into a tar.gz file. And send the file to the my email lsong18@jhu.edu. Due date: suppose to be Tuesday(April 2) mid-night. 
+	\section{Programming: Implement your browser fingerprinting tool} (16 points)
+By the paper, you should already know how browser fingerprinting works. In this task, you are asked to implement the front end of a fingerprinting tool by JavaScript. To make the task simpler, you only need to collect the JAVASCRIPT BASED features mentioned in the Table 1 of the paper and combine them together as a fingerprint.  The required feature list is:
+		\begin{itemize}
+			\item List of plugins
+			\item Cookies enabled
+			\item Use of local/session storage
+			\item Timezone
+			\item Screen resolution and color depth
+			\item Platform
+			\item Do Not Track
+			\item Canvas: the canvas generation code is provided, you just need to call it and get the hashvalue of the generated canvas. (Hint: Use toDataURL to get the base64 encoded value of the canvas)
+			\item WebGL Vendor
+			\item WebGL Render
+			\item Use of an ad blocker
+		\end{itemize}
+Since the WebGL Vendor and WebGL Render value is masked by Firefox, Chrome is recommended for testing your implementation. I will also test your program on Chrome.
+\section{Writing: Talk about your opinions on  browser fingerprinting}
+\subsection{Browser fingerprinting VS Cookie} (2 points)
+Do you think browser fingerprint is better than a traditional cookie? What's the pros and cons of browser fingerprint?
+\subsection{Improve the current browser fingerprint} (2 points)
+Do you have any suggestions to improve the browser fingerprint? You can list some of the features that can be used but not be mentioned in this paper, or you can talk about your ideas on how to make browser fingerprinting better. 
+
+
+\end{document}
